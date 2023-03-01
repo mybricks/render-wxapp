@@ -5,7 +5,7 @@ import {compareVersion} from "./utils";
 
 console.log(`%c ${pkg.name} %c@${pkg.version}`, `color:#FFF;background:#fa6400`, ``, ``);
 
-export default function render(json, opts: { events?, env?, comDefs?, observable?, ref? } = {}) {
+export default function render(json, opts: { events?, env?, comDefs, observable?, ref? } = {}) {
   const env = Object.assign({
     runtime: {},
     i18n(text: any) {
